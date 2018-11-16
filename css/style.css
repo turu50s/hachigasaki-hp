@@ -5,6 +5,7 @@
 body {
   margin: 0 auto;
   background-color: #A9F5A9;
+  height: 100%;
 }
 
 .nav {
@@ -45,7 +46,7 @@ main h2 {
 }
 
 main p {
-  color: #01DF74;
+  color: #088A08;
 }
 
 footer {
@@ -54,7 +55,22 @@ footer {
   height: 50px;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 footer p {
   margin: 0;
   line-height: 50px;
+}
+
+#contact > .container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input#name, input#kana {
+  width: 50%;
 }

@@ -42,7 +42,7 @@
     <main>
       <img class="img-responsive" src="images/21seiki11.jpg">
         <div class="container center-block">
-          <section id="greeting">
+          <section id="greeting" class="mb-5">
             <h2 class="text-center">ご挨拶</h2>
             <p>ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。</P>
             <p>ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。</P>
@@ -50,22 +50,41 @@
             <p>ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。</P>
             <p>ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。ご挨拶。</P>
           </section>
-          <section id="service">
+          <section id="service" class="mb-5">
             <h2 class="text-center">サービス</h2>
             <p>サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。サービス。</P>
           </section>
-          <section id="access">
+          <section id="access" class="mb-5">
             <h2 class="text-center">アクセス</h2>
             <P>アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。アクセス。</P>
           </section>
           <section id="contact">
-            <h2 class="text-center">お問合せ</h2>
-            <P>お問合せ</P>
+            <div class="container center-block">
+
+              <h2 class="text-center">お問合せ</h2>
+              <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="お名前">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="kana" placeholder="フリガナ">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address" placeholder="ご住所">
+                </div>
+                <div class=" form-group">
+                    <textarea class="form-control" rows="5" id="comments" placeholder="お問合せ内容"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-success">送信<span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+              </form>
+            </div>
           </section>
         </div>
     </main>
     <footer>
-      <p>coipyright</p>
+      <p class="text-center">Copyright &copy; 2018 ASA松戸八ヶ崎 All Rights Reseved.</p>
     </footer>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
