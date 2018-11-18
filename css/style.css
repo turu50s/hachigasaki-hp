@@ -45,6 +45,29 @@ main h2 {
   color: #088A08;
 }
 
+#greeting, #service {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#service li {
+  color: #088A08;
+}
+
+#service img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#service p {
+  text-align: center;
+  width: 350px;
+}
+
+#access p {
+  font-size: 20px;
+  text-align: center;
+}
 main p {
   color: #088A08;
 }
