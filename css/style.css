@@ -36,16 +36,20 @@ ul li {
 }
 
 main .container {
-  background-color: #CEF6EC;
+  background-color: #A9F5A9;
 }
-
+section {
+  border: 10px solid #CEF6EC;
+}
 main h2 {
   font-family: 'Passion One', cursive;
-  font-family: 'M PLUS 1p', sans-serif;
   color: #088A08;
+  font-family: 'M PLUS 1p', sans-serif;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
-#greeting, #service {
+#greeting, #service, #access, #contact {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -64,7 +68,20 @@ main h2 {
   width: 350px;
 }
 
-#access p {
+#service ul {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+#service ul li {
+  background-color: #CEF6EC;
+}
+
+#access table {
+  margin: 0 auto;
+}
+
+#access table td {
   font-size: 20px;
   text-align: center;
 }
@@ -79,7 +96,7 @@ div.map {
   height: 0;
   overflow: hidden;
 }
-.maps iframe {
+.map iframe {
   position: absolute;
   top: 0;
   left: 0;
