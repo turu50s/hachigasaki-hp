@@ -1,11 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0 auto;
   background-color: #A9F5A9;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .nav {
@@ -35,23 +31,38 @@ ul li {
   margin-bottom: 20px;
 }
 
+main {
+  margin-top: 80px;
+}
+
 main .container {
   background-color: #A9F5A9;
 }
+
 section {
-  border: 10px solid #CEF6EC;
+  border: 5px solid #CEF6EC;
+  border-radius: 20px;
+  box-shadow: 5px 5px;
 }
 main h2 {
-  font-family: 'Passion One', cursive;
-  color: #088A08;
+  color: #ffffff;
   font-family: 'M PLUS 1p', sans-serif;
   padding: 20px;
   margin-bottom: 0px;
 }
 
+table {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #088A08;
+}
+
 #greeting, #service, #access, #contact {
   max-width: 800px;
   margin: 0 auto;
+}
+#greeting p {
+  color: #088A08;
 }
 
 #service li {
@@ -123,8 +134,17 @@ footer p {
 }
 
 footer p span {
-  font-size: 22px;
   color: red;
+  font-size: 22px;
+}
+
+@media(max-width:700px) {
+  footer p {
+    font-size: 12px;
+  }
+  footer p span {
+    font-size: 14px;
+  }  
 }
 
 #contact > .container {

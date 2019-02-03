@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ASA松戸八ヶ崎</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,56 +21,57 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav4">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">ホーム</a>
+                    <a class="nav-link active" href="index.html#service">ホーム</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="index.html#greeting">お知らせ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#greeting">ご挨拶</a>
+                    <a class="nav-link" href="index.html#service">サービス</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">サービス</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#access">アクセス</a>
-                </li>
-                <li class="nav-item">
+                    <a class="nav-link" href="index.html#access">アクセス</a>
+                </li> -->
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#contact">お問合せ</a>
-                </li>
+                </li> -->
             </ul>
         </div>
       </nav>
     </header>
     <main>
-      <img class="img-responsive" src="images/21seiki11.jpg">
-        <div class="container center-block">
-          <section id="service" class="mb-5">
-            <h2 class="text-center">サービス</h2>
+      <div class="container center-block">
+        <section>
+            <h2 class="text-center">取扱紙一覧</h2>
             <div class="row">
-                <div class="col-lg-6 text-center">
-                  <img src="images/haitatu.jpg" class="rounded img-thumbnail mb-3 mx-auto">
-                  <p>取扱い紙</p>
-                  <ul class="list-group">
-                    <li class="list-group-item">朝日新聞</li>
-                    <li class="list-group-item">日刊スポーツ</li>
-                    <li class="list-group-item">日本経済新聞</li>
-                    <li class="list-group-item">毎日新聞</li>
-                    <li class="list-group-item">東京新聞</li>
-                    <li class="list-group-item">産経新聞</li>
-                    <li class="list-group-item">etc</li>
-                  </ul>
-                    <P><span>
-                    （朝日、日刊スポーツ以外は、<br>八ヶ崎方面のみの配達になります）</span></P>
+                <div class="col-sm-12">
+                  <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                      <tr><th>銘柄</th><th>月極定価</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>朝日新聞（朝夕刊セット）</td><td>4,037</td></tr>
+                      <tr><td>朝日小学生新聞</td><td>1,769</td></tr>
+                      <tr><td>朝日中高生新聞</td><td>967</td></tr>
+                      <tr><td>日本経済新聞（朝夕刊セット）</td><td>4,900</td></tr>
+                      <tr><td>毎日新聞（朝夕刊セット）</td><td>4,037</td></tr>
+                      <tr><td>東京新聞（朝夕刊セット）</td><td>3,343</td></tr>
+                      <tr><td>産経新聞</td><td>3,034</td></tr>
+                      <tr><td>千葉日報</td><td>3,300</td></tr>
+                      <tr><td>日経MJ</td><td>2,097</td></tr>
+                      <tr><td>日経産業新聞</td><td>3,670</td></tr>
+                      <tr><td>繊研新聞</td><td>4,089</td></tr>
+                      <tr><td>サンケイスポーツ</td><td>3,353</td></tr>
+                      <tr><td>東京中日スポーツ</td><td>3,039</td></tr>
+                      <tr><td>The Japan Timees</td><td>5,143</td></tr>
+                      <tr><td>SANKEI EXPRESS</td><td>2,160</td></tr>
+                    </tbody>
+                  </table>
+                  <P><span>（朝日、日刊スポーツ以外は、八ヶ崎方面のみの配達になります）</span></P>
                 </div>
-                <div class="col-lg-6 text-center">
-                  <img src="images/eakon.jpg" class="rounded img-thumbnail mb-3 mt-2 mx-auto">
-                  <p>クリーニング</p>
-                  <ul class="list-group">
-                    <li class="list-group-item">エアコン</li>
-                    <li class="list-group-item">レンジフード</li>
-                  </ul>
-              </div>
             </div>
-          </section>
-        </div>
+        </section>
+      </div>
     </main>
     <footer>
       <!-- <p class="text-center">Copyright &copy; 2018 ASA松戸八ヶ崎 All Rights Reseved.</p> -->
@@ -79,19 +80,19 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script>
-    $(function(){
-      $('a[href^="#"]').click(function(){
-      var speed = 500;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top - 90;
-      $("html, body").animate({scrollTop:position}, speed, "easeInOutQuart");
-      $('ul li a.active').removeClass('active');
-      $(this).addClass('active');
-      $(".navbar-collapse").collapse('hide');
-      return false;
-      });
-    });
+    // $(function(){
+    //   $('a[href^="#"]').click(function(){
+    //   var speed = 500;
+    //   var href= $(this).attr("href");
+    //   var target = $(href == "#" || href == "" ? 'html' : href);
+    //   var position = target.offset().top;
+    //   $("html, body").animate({scrollTop:position}, speed, "easeInOutQuart");
+    //   $('ul li a.active').removeClass('active');
+    //   $(this).addClass('active');
+    //   $(".navbar-collapse").collapse('hide');
+    //   return false;
+    //   });
+    // });
     </script>
   </body>
 </html>
