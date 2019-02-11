@@ -33,6 +33,7 @@ ul li {
 
 main {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 main .container {
@@ -51,6 +52,19 @@ main h2 {
   margin-bottom: 0px;
 }
 
+.card {
+  max-width: 350px;
+  background-color: #CEF6EC;
+}
+
+.card-heading {
+  color: red;
+}
+
+.card-body {
+  color: #088A08;
+}
+
 table {
   max-width: 500px;
   margin: 0 auto;
@@ -63,6 +77,8 @@ table {
 }
 #greeting p {
   color: #088A08;
+  font-weight: bold;
+  color: red;
 }
 
 #service li {
