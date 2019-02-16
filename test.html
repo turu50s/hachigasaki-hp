@@ -1,17 +1,3 @@
-<?php
-mb_language("Japanese");
-mb_internal_encoding("UTF-8");
-
-$message = "名前：" . $_POST["name"] . '(' . $_POST['kana'] . ')'. "\n本文：" . $_POST["message"];
-
-if !(mb_send_mail("hachigasaki@asa-hachigasaki.com", "お問合せ", $message, "From:" . $_POST["email"]))
-{
-echo "メールの送信に失敗しました。";
-header('Location: http://www.asa-hachigasaki.com/');
-exit();
-}
-?>
-
 <html>
 <head>
   <meta charset="utf-8">
