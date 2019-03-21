@@ -2,13 +2,20 @@
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
-$message = "名前：" . $_POST["name"] . '(' . $_POST['kana'] . ')'. "\n本文：" . $_POST["message"];
+$to = "hachigasaki@asa-matsudo.com";
+$from = "From:" . h($_POST["email"]);
+$title =  "お問合せ";
 
-if !(mb_send_mail("hachigasaki@asa-hachigasaki.com", "お問合せ", $message, "From:" . $_POST["email"]))
-{
-echo "メールの送信に失敗しました。";
-header('Location: http://www.asa-hachigasaki.com/');
-exit();
+$message = "名前：" . h($_POST["name"]) . '(' . h($_POST['kana']) . ')'. "\n本文：" . h($_POST["message"]);
+
+if !(mb_send_mail($to, $title, $message, $from)) {
+  echo "メールの送信に失敗しました。";
+  header('Location: http://www.asa-hachigasaki.com/');
+  exit();
+}
+
+function h($s) {
+  return htmlspecialchars($s, ENT_QUOTES, "UTF-8");
 }
 ?>
 
