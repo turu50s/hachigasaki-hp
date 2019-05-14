@@ -40,6 +40,16 @@ main .container {
   background-color: #A9F5A9;
 }
 
+.img {
+  height: 500px;
+  margin-bottom: 20px;
+  background: 
+    radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%)
+    ,url(../images/park21-1.png);;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 h2.title {
   /* border-bottom: 10px solid #CEF6EC; */
   border: 5px solid #CEF6EC;
