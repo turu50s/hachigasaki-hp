@@ -40,13 +40,18 @@ main .container {
   background-color: #A9F5A9;
 }
 
-.img {
-  height: 500px;
+.jumbotron {
+  /* width: 100%; */
+  /* height: 480px; */
+  height: 0;
+  padding-top: 57%;
   margin-bottom: 20px;
   background: 
     radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%)
-    ,url(../images/park21-1.png);;
+    ,url(../images/park21-1.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 0px bottom 0px;
   background-attachment: fixed;
 }
 

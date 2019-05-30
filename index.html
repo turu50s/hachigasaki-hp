@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ASA松戸八ヶ崎</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Passion+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </script>
   </head>
   <body>
@@ -41,8 +45,9 @@
       </nav>
     </header>
     <main>
-      <div class="img"></div>
       
+      <div class="jumbotron jumbotron-fluid"></div>
+
       <!-- <img class="img-responsive" src="images/park21-1.png"> -->
       <div class="container center-block">
         <section id="greeting" class="mb-5">
@@ -66,17 +71,79 @@
             <div class="row">
                 <div class="col-lg-6 text-center">
                   <img src="images/IMG_1233.JPG" class="rounded img-thumbnail mb-3 mx-auto">
-                  <p>新聞宅配サービス</p>
-                  <p><a href="shinbun.html">取り扱紙はこちら</a></p>
+                  <p>新聞宅配サービス<br>
+                    <!-- <span><a href="shinbun.html">取り扱紙はこちら</a></span> -->
+                    <!-- 切り替えボタンの設定 -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      取り扱紙はこちら
+                    </button>
+                  </p>
                 </div>
                 <div class="col-lg-6 text-center">
                   <img src="images/eakon.jpg" class="rounded img-thumbnail mb-3 mx-auto">
-                  <p>エアコンクリーニング</p>
-                  <p class="alert alert-info">詳しくは販売店までお問合せ下さい</p>
+                  <p>エアコンクリーニング<br>
+                  <span class="text-danger"><i class="fas fa-user-tie"></i> 詳しくは販売店まで</span>
+                  </p>
               </div>
             </div>
           </div>
         </section>
+
+        <!-- モーダルの設定 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="ModalLabel">取扱紙一覧</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                      <tr><th>銘柄</th><th>月極定価</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>朝日新聞（朝夕刊セット）</td><td>4,037</td></tr>
+                      <tr><td>朝日小学生新聞</td><td>1,769</td></tr>
+                      <tr><td>朝日中高生新聞</td><td>967</td></tr>
+                      <tr><td>日刊スポーツ</td><td>3,353</td></tr>
+                      <tr><td>日刊工業新聞</td><td>4,721</td></tr>
+                      <tr><td>株式新聞</td><td>3,910</td></tr>
+                      <tr><td>日本農業新聞</td><td>2,623</td></tr>
+                      <tr><td>繊研新聞</td><td>4,089</td></tr>
+                      <tr><td>自動車新聞</td><td>5,770</td></tr>
+                      <tr><td>The Japan Times</td><td>5,143</td></tr>
+                      <tr><td>朝日ウィークリー</td><td>998</td></tr>
+                      <tr><td>Japan Times α</td><td>1,132</td></tr>
+                      <tr><td>へらニュース</td><td>1,300</td></tr>
+                      <tr><td>つりニュース</td><td>1,300</td></tr>
+                      <tr><td>日本経済新聞（朝夕刊セット）</td><td>4,900</td></tr>
+                      <tr><td>日経MJ</td><td>2,097</td></tr>
+                      <tr><td>日経産業新聞</td><td>3,670</td></tr>
+                      <tr><td>毎日新聞（朝夕刊セット）</td><td>4,037</td></tr>
+                      <tr><td>毎日小学生新聞</td><td>1,580</td></tr>
+                      <tr><td>スポーツニッポン</td><td>3,353</td></tr>
+                      <tr><td>東京新聞（朝夕刊セット）</td><td>3,343</td></tr>
+                      <tr><td>東京中日スポーツ</td><td>3,039</td></tr>
+                      <tr><td>産経新聞</td><td>3,034</td></tr>
+                      <tr><td>サンケイスポーツ</td><td>3,353</td></tr>
+                      <tr><td>SANKEI EXPRESS</td><td>2,160</td></tr>
+                      <tr><td>千葉日報</td><td>3,300</td></tr>
+                    </tbody>
+                  </table>
+                  <P class="comment text-center bg-danger text-white"><span>（一部の新聞は、八ヶ崎方面のみの配達になります）</span></P>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+              </div><!-- /.modal-footer -->
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
         <section id="access" class="mb-5 pb-3">
           <h2 class="title text-center">アクセス</h2>
           <div  class="content">
@@ -98,7 +165,7 @@
           <div class="content">
             <div class="container center-block pb-3">
               <p class="text-danger"><i class="fas fa-exclamation-triangle text-danger"></i>お急ぎの場合は、お電話でお問い合わせください</p>
-              <form action="confirm.php" method="post">
+              <form action="" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" placeholder="お名前">
                 </div>
@@ -115,7 +182,7 @@
                     <textarea class="form-control" rows="5" id="message" placeholder="お問合せ内容"></textarea>
                 </div>
                 <div class="text-center">
-                  <input type="button" class="btn btn-success" value="送信">
+                  <button id="send" class="btn btn-success">送信</button>
                 </div>
               </form>
             </div>
@@ -126,22 +193,7 @@
     <footer>
       <p class="text-center">お問合せ は　<span><i class="fas fa-phone"></i>047-341-4507</span>　まで　(受付時間&nbsp;9:00-20:00)</p>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
-    <script>
-    $(function(){
-      $('a[href^="#"]').click(function(){
-      var speed = 500;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top - 90;
-      $("html, body").animate({scrollTop:position}, speed, "easeInOutQuart");
-      $('ul li a.active').removeClass('active');
-      $(this).addClass('active');
-      $(".navbar-collapse").collapse('hide');
-      return false;
-      });
-    });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
